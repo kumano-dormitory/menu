@@ -1,0 +1,12 @@
+// Place all the styles related to the Menus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+tr:nth-child(2n) {
+  background: #eee;
+}
+tr:nth-child(2n+1) {
+  background: #ddf;
+}
+pre {
+  background: transparent !important;
+}

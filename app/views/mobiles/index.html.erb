@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>今週の寮食</h1>
+<div data-role="collapsible-set">
+  <% @menus.each do |menu| %>
+      <div data-role="collapsible">
+        <h3><%= menu.day.strftime("%m月 %d日") %></h3>
+        <dl>
+          <dt>昼食</dt>
+          <dd><pre><%= menu.lunch1 %></pre></dd>
+          <dt>昼食（麺）</dt>
+          <dd><pre><%= menu.lunch2 %></pre></dd>
+          <dt>夕食</dt>
+          <dd><pre><%= menu.dinner %></pre></dd>
+        </ul>
+      </div>
+  <% end %>
+</div>
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js">
+  </script>
